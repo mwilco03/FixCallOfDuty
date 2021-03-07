@@ -1,5 +1,5 @@
 Function Repair-Cod{
-    Stop-Process -Force -Name "Battle.net.exe"
+    Stop-Process -Force -ProcessName "Battle.net"
     $CoDs = "Call of Duty Black Ops Cold War Beta","Call of Duty Modern Warfare","Call of Duty Black Ops Cold War"
     $Files = "Program Files","Users\$env:USERNAME\Documents"
     $Drives = (65..(65+25)).ForEach({ [char]$_ })
