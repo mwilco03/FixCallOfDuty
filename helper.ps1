@@ -4,5 +4,5 @@ function Get-EmployeeNumber {
         [Alias("EN")]
         $EmployeeNumber
     )
-    Get-ADUser -Filter { employeenumber -eq "$employeenumber" }  -Property givenname,surname,samaccountname,employeenumber 
+    Get-ADUser -Filter { employeenumber -eq $employeenumber }  -Property givenname,surname,samaccountname,employeenumber 
 }
